@@ -1,159 +1,452 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roadmap To Land in IT Organisation</title>
-    <style>
-        body { 
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            background: url('https://img.freepik.com/premium-photo/group-people-standing-mountain_51195-4251.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1699142400&semt=ais') no-repeat center center fixed;
-            background-size: cover;
-        }
-        header {
-            background: rgba(0, 0, 0, 0.7);
-            color: #fff;
-            padding: 1.5rem;
-            text-align: center;
-            font-size: 2rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-weight: bold;
-        }
-        .container {
-            width: 80%;
-            margin: 2rem auto;
-            padding: 2rem;
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 8px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-        }
-        h1 {
-            margin-top: 0;
-            font-weight: bold;
-            font-style: italic;
-            color: #4A90E2;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        li {
-            margin: 1rem 0;
-            padding: 0.5rem;
-            background: rgba(226, 226, 226, 0.8);
-            border-radius: 4px;
-            font-style: italic;
-        }
-        a {
-            color: #007bff;
-            font-weight: bold;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .section-title {
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 0.5rem;
-            font-size: 1.3rem;
-            color: #FF5733;
-        }
-        .section-content {
-            margin-left: 1rem;
-            font-style: italic;
-        }
-        .top-link {
-            text-align: center;
-            font-size: 1.2rem;
-            margin-top: 1rem;
-            font-weight: bold;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roadmap To Land in IT Organisation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap" rel="stylesheet">
+  <style>
+    body {
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background: url('https://wallpapers.com/images/featured/newspaper-aesthetic-6zy4tj738voyh9fx.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: bold;
+      display: flex;
+      flex-direction: row;
+      /* Default to row for laptops */
+      align-items: center;
+      justify-content: space-between;
+      border-width: 20px;
+      border-color: #FF5733;
+    }
+
+    .circle {
+      margin-bottom: 1rem;
+      border-radius: 10%;
+      overflow: hidden;
+      /* Add space between the circle and the heading */
+    }
+
+    @media (max-width: 768px) {
+
+      /* Mobile styles */
+      header {
+        flex-direction: column;
+        /* Change to column for mobile */
+        align-items: center;
+        /* Center align items */
+        background-image: url('./captain.png');
+        background-size: cover;
+      }
+
+      .circle {
+        margin-bottom: 1rem;
+        border-radius: 20%;
+        overflow: hidden;
+        /* Add space between the circle and the heading */
+      }
+
+      h1 {
+        font-size: 0.5rem;
+        /* Smaller font size */
+      }
+    }
+
+
+    /* Improved fonts and colors */
+    h1 {
+      font-family: "Sofadi One", system-ui;
+      /* Better font */
+      color: #ffffff;
+      /* Change text color */
+    }
+
+
+    .container {
+      width: 80%;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: rgba(62, 62, 62, 0.9);
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .paper-clip {
+      position: absolute;
+      top: -40px;
+      /* Adjust based on your image size */
+      right: -40px;
+      /* Adjust based on your image size */
+      width: 50px;
+      /* Adjust the size as needed */
+      height: auto;
+      transform: rotate(30deg);
+      z-index: 1;
+      /* Ensure it's above the container background */
+    }
+
+    li {
+      position: relative;
+      margin: 1rem 0;
+      padding: 0.5rem;
+      background: rgba(174, 174, 174, 0.8);
+      border-radius: 4px;
+      font-style: italic;
+    }
+
+    a {
+      color: #241105;
+      font-weight: bold;
+      font-family: "Sofadi One", system-ui;
+      /* Better font */
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .section-title {
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 0.5rem;
+      font-size: 1.3rem;
+      color: #323232;
+    }
+
+    .section-content {
+      margin-left: 1rem;
+      font-style: italic;
+    }
+
+    .top-link {
+      text-align: center;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      font-weight: bold;
+      background-color: #f1f1f1;
+    }
+
+
+    /* Modal Styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .modal-content {
+      background-color: white;
+      margin: 15% auto;
+      padding: 20px;
+      border-radius: 8px;
+      width: 50%;
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .pdf-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .pdf-button {
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 5px;
+      background-color: #ee965b;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .pdf-button:hover {
+      background-color: #357ABD;
+    }
+
+    .pdf-list {
+      padding-left: 0;
+    }
+
+    .pdf-list li {
+      margin: 10px 0;
+      padding: 10px;
+      background-color: #f1f1f1;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .pdf-list li:hover {
+      background-color: #e0e0e0;
+    }
+
+    .pdf-list a {
+      text-decoration: none;
+      color: #e46861;
+      font-weight: bold;
+    }
+
+    .pdf-list a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .pdf-buttons {
+        flex-direction: column;
+        /* Stack buttons vertically */
+        align-items: center;
+        /* Center align buttons */
+      }
+
+      .pdf-button {
+        width: 100%;
+        /* Make buttons full width */
+        padding: 1rem;
+        /* Adjust padding */
+        font-size: 1.2rem;
+        /* Increase font size for better readability */
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <!-- Top link section -->
-    <div class="top-link">
-        <a href="https://youtu.be/SmhOnOUiFds?si=6qIxblwPFmwaLoWW" target="_blank" style="color: #FF5733; text-transform: uppercase;">Men Can Do Anything</a>
+  <!-- Top link section -->
+  <div class="top-link">
+    <a href="https://youtu.be/SmhOnOUiFds?si=6qIxblwPFmwaLoWW" target="_blank"
+      style="color: #FF5733; text-transform: uppercase;">Men Can Do Anything</a>
+  </div>
+
+  <header>
+    <div class="circle">
+      <img src="https://media.tenor.com/oyr542jkTpsAAAAM/hajimenoippoend-hajime.gif" frameborder="0"
+        style="width: 100%; height: auto;" />
     </div>
-    
-    <header>
-        <h1>Chalo Start krte hai</h1>
-    </header>
-    <div class="container">
-        <ul>
-            <li>
-                <div class="section-title">Computer Fundamentals</div>
-                <div class="section-content">
-                    Everyday Encounters with Computer<br>
-                    Practice: <a href="https://www.javatpoint.com/computer-fundamental-mcq" target="_blank">Computer Fundamental MCQ</a>
-                </div>
+    <h1>Chalo Start krte hai</h1>
+  </header>
+  <div class="container">
+    <ul>
+      <li>
+        <div class="section-title">Computer Fundamentals</div>
+        <div class="section-content">
+          <img src="https://www.pngmart.com/files/15/Flying-Hero-PNG-Clipart.png" alt="Paper Clip" class="paper-clip" />
+          Everyday Encounters with Computer<br>
+          Practice: <a href="https://www.javatpoint.com/computer-fundamental-mcq" target="_blank">Computer Fundamental
+            MCQ</a>
+        </div>
+      </li>
+      <li>
+        <div class="section-title">Domain MCQs</div>
+        <div class="section-content">
+          <img src="https://www.pngmart.com/files/15/Flying-Hero-PNG-Clipart.png" alt="Paper Clip" class="paper-clip" />
+          <ul>
+            <li>C Language: <a href="https://www.interviewbit.com/c-programming-mcq/" target="_blank">C Programming
+                MCQ</a></li>
+            <li>C++ Language: <a href="https://www.interviewbit.com/cpp-mcq/" target="_blank">C++ MCQ</a></li>
+            <li>DSA: <a href="https://www.interviewbit.com/data-structure-mcq/" target="_blank">Data Structure MCQ</a>
             </li>
-            <li>
-                <div class="section-title">Domain MCQs</div>
-                <div class="section-content">
-                    <ul>
-                        <li>C Language: <a href="https://www.interviewbit.com/c-programming-mcq/" target="_blank">C Programming MCQ</a></li>
-                        <li>C++ Language: <a href="https://www.interviewbit.com/cpp-mcq/" target="_blank">C++ MCQ</a></li>
-                        <li>DSA: <a href="https://www.interviewbit.com/data-structure-mcq/" target="_blank">Data Structure MCQ</a></li>
-                        <li>Analysis of Algo: <a href="https://www.interviewbit.com/daa-mcq/" target="_blank">DAA MCQ</a></li>
-                        <li>OOPS: <a href="https://www.interviewbit.com/oops-mcq/" target="_blank">OOPS MCQ</a></li>
-                        <li>Computer Networks: <a href="https://www.interviewbit.com/oops-mcq/" target="_blank">Networking MCQ</a></li>
-                        <li>DBMS: <a href="https://www.interviewbit.com/dbms-mcq/" target="_blank">DBMS MCQ</a></li>
-                        <li>Architecture: <a href="https://www.interviewbit.com/software-engineering-mcq/" target="_blank">Software Engineering MCQ</a></li>
-                    </ul>
-                </div>
+            <li>Analysis of Algo: <a href="https://www.interviewbit.com/daa-mcq/" target="_blank">DAA MCQ</a></li>
+            <li>OOPS: <a href="https://www.interviewbit.com/oops-mcq/" target="_blank">OOPS MCQ</a></li>
+            <li>Computer Networks: <a href="https://www.interviewbit.com/oops-mcq/" target="_blank">Networking MCQ</a>
             </li>
-            <li>
-                <div class="section-title">Coding</div>
-                <div class="section-content">
-                    <ul>
-                        <li>Phase-1 (Problem Solver): <a href="https://rajesh-pareek.github.io/DSA-sheet/" target="_blank">DSA Sheet</a></li>
-                        <li>Phase-2 (Coder): <a href="https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems/" target="_blank">SDE Sheet</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li>
-                <div class="section-title">Knowing Yourself</div>
-                <div class="section-content">
-                    Personality - Strength and Weakness<br>
-                    Test: <a href="https://www.16personalities.com/free-personality-test" target="_blank">Personality Test</a>
-                </div>
-            </li>
-            <li>
-                <div class="section-title">How to Set Up LinkedIn Profile</div>
-                <div class="section-content">
-                    <ul>
-                        <li><a href="https://www.youtube.com/shorts/eUGp9dmzAvU" target="_blank">Video Guide 1</a></li>
-                        <li><a href="https://www.youtube.com/watch?v=z-ZXz86fzJk" target="_blank">Video Guide 2</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li>
-                <div class="section-title">Build the Resume That Gets You the Job</div>
-                <div class="section-content">
-                    <a href="https://www.youtube.com/watch?v=eEAEB8qM7Ds" target="_blank">Resume Building Video</a><br>
-                    Find Resume Templates: <a href="https://lookingforresume.com/templates" target="_blank">Best Resume Templates</a>
-                </div>
-            </li>
-            <li>
-                <div class="section-title">Sample Referral Message</div>
-                <div class="section-content">
-                    Get a sample referral message here: <a href="https://docs.google.com/document/d/1T4hhOXNf1hEeHnNVdmUliN_Tu2Rid0cR6Y2Vw5Lo7Mw/mobilebasic" target="_blank">Sample Referral Message</a>
-                </div>
-            </li>
-            <li>
-                <div class="section-title">Keep Yourself Updated with Market Trends</div>
-                <div class="section-content">
-                    Stay updated with market trends: <a href="https://wellfound.com/" target="_blank">Wellfound Market Trends</a>
-                </div>
-            </li>
+            <li>DBMS: <a href="https://www.interviewbit.com/dbms-mcq/" target="_blank">DBMS MCQ</a></li>
+            <li>Architecture: <a href="https://www.interviewbit.com/software-engineering-mcq/" target="_blank">Software
+                Engineering MCQ</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="section-title">Coding</div>
+        <div class="section-content">
+          <img src="https://www.pngmart.com/files/15/Flying-Hero-PNG-Clipart.png" alt="Paper Clip" class="paper-clip" />
+          <ul>
+            <li>Phase-1 (Problem Solver): <a href="https://rajesh-pareek.github.io/DSA-sheet/" target="_blank">DSA
+                Sheet</a></li>
+            <li>Phase-2 (Coder): <a
+                href="https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems/"
+                target="_blank">SDE Sheet</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="section-title">Knowing Yourself</div>
+        <div class="section-content">
+          <img src="https://www.pngmart.com/files/15/Flying-Hero-PNG-Clipart.png" alt="Paper Clip" class="paper-clip" />
+          Personality - Strength and Weakness<br>
+          Test: <a href="https://www.16personalities.com/free-personality-test" target="_blank">Personality Test</a>
+        </div>
+      </li>
+      <li>
+        <div class="section-title">How to Set Up LinkedIn Profile</div>
+        <div class="section-content">
+          <img src="https://www.pngmart.com/files/15/Flying-Hero-PNG-Clipart.png" alt="Paper Clip" class="paper-clip" />
+          <ul>
+            <li><a href="https://www.youtube.com/shorts/eUGp9dmzAvU" target="_blank">Video Guide 1</a></li>
+            <li><a href="https://www.youtube.com/watch?v=z-ZXz86fzJk" target="_blank">Video Guide 2</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="section-title">Build the Resume That Gets You the Job</div>
+        <div class="section-content">
+          <img src="https://www.pngmart.com/files/15/Flying-Hero-PNG-Clipart.png" alt="Paper Clip" class="paper-clip" />
+          <a href="https://www.youtube.com/watch?v=eEAEB8qM7Ds" target="_blank">Resume Building Video</a><br>
+          Find Resume Templates: <a href="https://lookingforresume.com/templates" target="_blank">Best Resume
+            Templates</a>
+        </div>
+      </li>
+      <li>
+        <div class="section-title">Sample Referral Message</div>
+        <div class="section-content">
+          <img src="https://www.pngmart.com/files/15/Flying-Hero-PNG-Clipart.png" alt="Paper Clip" class="paper-clip" />
+          Get a sample referral message here: <a
+            href="https://docs.google.com/document/d/1T4hhOXNf1hEeHnNVdmUliN_Tu2Rid0cR6Y2Vw5Lo7Mw/mobilebasic"
+            target="_blank">Sample Referral Message</a>
+        </div>
+      </li>
+      <li>
+        <div class="section-title">Keep Yourself Updated with Market Trends</div>
+        <div class="section-content">
+          <img src="https://www.pngmart.com/files/15/Flying-Hero-PNG-Clipart.png" alt="Paper Clip" class="paper-clip" />
+          Stay updated with market trends: <a href="https://wellfound.com/" target="_blank">Wellfound Market Trends</a>
+        </div>
+      </li>
+    </ul>
+
+    <!-- New Section for PDF Downloads -->
+    <h2 style="color: #fd9d80; text-align: center; margin-top: 2rem;">Study Materials</h2>
+    <div class="pdf-buttons" style="display: flex; justify-content: center; gap: 1rem; margin-bottom: 2rem;">
+      <button id="openModalDSA" class="pdf-button">Download DSA PDF</button>
+      <button id="openModalTech" class="pdf-button">Download Technology PDFs</button>
+      <button id="openModalCS" class="pdf-button">Download CS Fundamentals PDFs</button>
+    </div>
+
+    <!-- Modal for DSA -->
+    <div id="modalDSA" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeModalDSA">&times;</span>
+        <h3 style="color: #4A90E2;">DSA PDFs</h3>
+        <ul class="pdf-list">
+          <li><a href="hypersonic _C++.pdf" target="_blank">C++ CheatSheet</a></li>
+          <li><a href="Stl-cheatsheet.pdf" target="_blank">STL CheatSheet</a></li>
         </ul>
+      </div>
     </div>
+
+    <!-- Modal for Technology PDFs -->
+    <div id="modalTech" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeModalTech">&times;</span>
+        <h3 style="color: #4A90E2;">Technology PDFs</h3>
+        <ul class="pdf-list">
+          <li><a href="Web-develop.pdf" target="_blank">Web Development LighSpeed Notes</a></li>
+          <li><a href="terminalEdge_javascript.pdf" target="_blank">Super Fast JavaScript</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Modal for CS Fundamentals PDFs -->
+    <div id="modalCS" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeModalCS">&times;</span>
+        <h3 style="color: #4A90E2;">CS Fundamentals PDFs</h3>
+        <ul class="pdf-list">
+          <li><a href="cs-material1.pdf" target="_blank">CS Fundamentals 1</a></li>
+          <li><a href="cs-material2.pdf" target="_blank">CS Fundamentals 2</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      // Modal handling for DSA PDFs
+      var modalDSA = document.getElementById("modalDSA");
+      var btnDSA = document.getElementById("openModalDSA");
+      var spanDSA = document.getElementById("closeModalDSA");
+      btnDSA.onclick = function () {
+        modalDSA.style.display = "block";
+      }
+      spanDSA.onclick = function () {
+        modalDSA.style.display = "none";
+      }
+
+      // Modal handling for Technology PDFs
+      var modalTech = document.getElementById("modalTech");
+      var btnTech = document.getElementById("openModalTech");
+      var spanTech = document.getElementById("closeModalTech");
+      btnTech.onclick = function () {
+        modalTech.style.display = "block";
+      }
+      spanTech.onclick = function () {
+        modalTech.style.display = "none";
+      }
+
+      // Modal handling for CS PDFs
+      var modalCS = document.getElementById("modalCS");
+      var btnCS = document.getElementById("openModalCS");
+      var spanCS = document.getElementById("closeModalCS");
+      btnCS.onclick = function () {
+        modalCS.style.display = "block";
+      }
+      spanCS.onclick = function () {
+        modalCS.style.display = "none";
+      }
+
+      // Close modal if user clicks outside of it
+      window.onclick = function (event) {
+        if (event.target == modalDSA) {
+          modalDSA.style.display = "none";
+        }
+        if (event.target == modalTech) {
+          modalTech.style.display = "none";
+        }
+        if (event.target == modalCS) {
+          modalCS.style.display = "none";
+        }
+      }
+    </script>
 </body>
+
 </html>
